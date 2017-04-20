@@ -1,0 +1,34 @@
+.app-container {
+	height: 100%;
+	padding:0;
+	margin:0;
+	float: left;
+	
+}
+.header {
+	background-color: #c3bcbc;
+	height:100px;
+	text-align:right;
+	padding-right:50px;
+	
+}
+
+.main-container {
+	background-color:green;
+	float:left;
+	width:100%;
+}
+
+.left-nav {
+	background-color: #dedbd9;
+	float:left;
+	width:20%;
+}
+
+.working-pan {
+	background-color:gray;
+	float:left;
+	width:80%;
+	height:300px;
+	
+}

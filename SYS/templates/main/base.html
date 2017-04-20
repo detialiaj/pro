@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<!--
+<div class="app-container">
+-->
+<head> {% block title %}  {% endblock %} </head>
+<title></title>
+
+<link rel="stylesheet" href="/static/global/style.css" type="text/css"/>
+
+<body>
+
+<div class="header">
+<h1> {{ title }}</h1>
+<p>Go to <a href="/manage/">admin</a> page.
+<a href="/"> home </a> page.
+</p>
+</div>
+
+<div class="main-container">
+	<div class="left-nav">
+		{% block left_container_content %} 
+		<ul>
+		
+		{% for app in applist %}
+		
+		<li> <a href="/{{ app |lower }}/"> {{ app }} </a> </li>	 
+		{% endfor %}
+		</ul>
+		{% endblock %}
+	</div>
+	<div class="working-pan">
+	{% block main_container_content %} 
+	<ul>
+	{% for item in item_list %}
+	<a href="{{ item }}/">{{ item  }}</a>&nbsp;
+	{% endfor %}
+	</ul>
+	{% endblock %}
+	</div>
+
+</div>
+
+<!--
+</div>
+-->
+</body>
+
+</html>
