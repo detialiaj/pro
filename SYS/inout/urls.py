@@ -14,12 +14,9 @@ Including another URLconf
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
 from django.conf.urls import url, include
-from inout import views
+from inout import views as inout_views
 
 urlpatterns = [
-    # url(r'^$', views.main_page_models, name='main_page_models'),
-	# url(r'^(?P<model>\w+)/$', views.main_page_models_detailed, name='main_page_models_detailed'),
-    
-
-
+    url(r'^$', inout_views.antenna_simulator, name='main_page_models'),
     ]
+# 
