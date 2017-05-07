@@ -7,7 +7,7 @@ def antenna_simulator(request):
 <html>
 <body>
 
-<h1>This is the test page... antenna is turning on...</h1>
+<h1>antenna is turning on...</h1>
 <ul>
 Go to
 <li><a href="/">Home</a> page.</li>
