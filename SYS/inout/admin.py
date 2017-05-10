@@ -13,7 +13,7 @@ class EntryAdmin(admin.ModelAdmin):
     model = Entry
     list_display = (
     'id',
-    'type',
+    'entry_type',
     'action_date',
     'rfid',
     'structure',	

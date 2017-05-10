@@ -1,6 +1,14 @@
 from django.shortcuts import render
 from django.http import HttpResponse, Http404
+from django.forms import ModelForm
+from inout.models import Entry
 
+class EntryForm(ModelForm):
+    class Meta:
+        model = Entry
+        fields = ['entry_type', 'rfid', 'structure']
+
+form = EntryForm()
 
 def antenna_simulator(request):
     
@@ -18,4 +26,4 @@ Go to
 </html>
 
 """
-    return HttpResponse(html_content)
+    return HttpResponse(form)

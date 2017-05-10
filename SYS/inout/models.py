@@ -19,7 +19,7 @@ class Entry(models.Model):
     ('In', 'In'),
     ('Out', 'Out'),
     )
-    type = models.CharField(max_length=3, choices=OPTION_LIST)
+    entry_type = models.CharField(max_length=3, choices=OPTION_LIST)
     rfid = models.ForeignKey('main.RFIDtag')
     action_date = models.DateTimeField(auto_now_add=True)
     structure = models.ForeignKey('Structure')
