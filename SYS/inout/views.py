@@ -3,6 +3,7 @@ from django.http import HttpResponse, Http404
 
 
 def antenna_simulator(request):
+    
     html_content = """<!DOCTYPE html>
 <html>
 <body>

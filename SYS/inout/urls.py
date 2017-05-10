@@ -19,4 +19,3 @@ from inout import views as inout_views
 urlpatterns = [
     url(r'^$', inout_views.antenna_simulator, name='main_page_models'),
     ]
-# 
