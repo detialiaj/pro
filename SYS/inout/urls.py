@@ -15,7 +15,10 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from inout import views as inout_views
+from inout.antenna_simulator import add_entry
+
 
 urlpatterns = [
-    url(r'^$', inout_views.antenna_simulator, name='main_page_models'),
+    url(r'^$', inout_views.antenna_simulator_form, name=''),
+    url(r'add_entry',add_entry, name='add_entry'),
     ]
