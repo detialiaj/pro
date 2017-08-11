@@ -2,9 +2,9 @@
     <form name="form" method="post" action="add_entry">
         {% csrf_token %}            
        {{ form }} <!-- use form.as_p to render the form parameter from view, as paragraph -->
-
-        
+	         
 		<input class="button" type="submit" value="Entry" />
+		<p>Is the form bound - {{is_bound}} </p>
     </form>
     
 </div>
