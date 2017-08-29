@@ -14,7 +14,8 @@ class Structure(models.Model):
 
 		
 class Entry(models.Model):
-    
+
+        
     OPTION_LIST = (
     ('In', 'In'),
     ('Out', 'Out'),

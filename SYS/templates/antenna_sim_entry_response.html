@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div>
+      <h3>Value entered successfully</h3>
+      <table border="1px">
+        <th>Key</th>
+        <th>Value</th>
+        {% for key, value in feedback.items%}
+        <tr>
+          <td>{{ key }}</td>
+          <td>{{ value }}</td>
+        </tr>
+        {% endfor %}
+      </table>
+      <a href="/inout">Add another record</a>
+
+
+    </div>
+  </body>
+</html>

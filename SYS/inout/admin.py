@@ -19,6 +19,7 @@ class EntryAdmin(admin.ModelAdmin):
     'structure',	
 )
     ordering = ['id', 'action_date']
+    list_per_page = 15
     
 
 admin.site.register(Structure, StructureAdmin)
